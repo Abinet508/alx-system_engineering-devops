@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(./0-current_working_directory)
+echo /tmp/correction/5226567272233963392828281018442907862756_2/205/2154/0x00-shell_basics
