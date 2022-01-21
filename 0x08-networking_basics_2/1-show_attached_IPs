@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-# Show all attached IPs
-# ifconfig | grep "inet addr" | awk '{print $2}' | cut -d":" -f2
-# Using experimental -P option of grep
-ifconfig 
+# displays all active IPv4 IPs on the machine it’s executed on
+ifconfig | awk -F "[: ]+" '/inet addr:/ { print $4 }'
